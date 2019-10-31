@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang=pt-br>
+  <head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta id="headC" name="theme-color" content="#000000"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/FVC.png">
+    <script src="js/config.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="vendor/bootstrap-input-spinner/src/bootstrap-input-spinner.js"></script>
+    <script>
+        $("input[type='number']").InputSpinner(
+        {
+            decrementButton: "<i class='fa fa-minus-circle'></i>", // button text
+            incrementButton: "<i class='fa fa-plus-circle'></i>",
+        });
+        function vrau()
+        {
+            Ca(i=3);
+            Cb(i=3);
+            Cc(i=3);
+            Cd(i=3);
+            tt();
+        }
+        function pei()
+        {
+            Ca2(i=3);
+            Cb2(i=3);
+            Cc2(i=3);
+            Cd2(i=3);
+            Ce2(i=3);
+            tt2();
+        }
+    </script> 
+  </head>
+  <body id="bd" class="bg-beta">
+    <!--Topo Começo-->
+    <nav id="nv" class="navbar sticky-top navbar-expand-lg navbar-dark bg-alpha">
+        <div class="d-inline-flex m-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img id="logo" class="logo logoD" alt="logo" src="img/Logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <div class="btn-group">
+                    <a id="btN1" class="btn btn-alpha t-rob shadow-none" href="index.html" target="_self">Home</a>
+                    <a id="btN2" class="btn btn-alpha t-rob shadow-none" href="contato.html" target="_self">Contato</a>
+                    <button id="click" type="button" class="btn btn-alpha t-rob shadow-none" onclick="Clock()">Modo Noturno</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!--Topo Fim-->
+    <!-- Modal Atividade 2 -->
+    <div class="modal fade" id="AT2M" tabindex="-1" role="dialog" aria-labelledby="AT2MTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-alpha">
+                    <h5 class="modal-title" id="AT2MTitle">Caixa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer bg-alpha">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fim -->
+    <!-- Modal Tab Periodica-->
+    <div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div id="MD-h" class="modal-header rounded-0 T-rob text-black bg-alpha border-ATd">
+                    <h5 class="text-center">Pesquisa Da Tabela</h5>
+                </div>
+                <div id="MD-c" class="modal-body bg-beta">
+                    <div class="justify-content-lg-start container-fluid">
+                        <div class="row">
+                            <div id="PdT-E" class="col-md-2 ml-4 align-self-start Nm-M PdT-ET text-center">
+                                <sup>1<br></sup><b>H</b></div>
+                            <div class="col justify-content-center">
+                                <table id="MD-t" class="table-sm table-bordered table-striped text-center">
+                                    <tr>
+                                        <th class="text-nowrap text-justify" scope="col">Nome</td>
+                                        <td id="Ndt" class="col-8" colspan="1">Hidrogênio</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-nowrap text-justify" scope="col">Elemento</td>
+                                        <td id="Edt" class="col-8" colspan="1">H</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-nowrap text-justify" scope="col">N° Atômico</td>
+                                        <td id="Adt" class="col-8" colspan="1">1</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-nowrap text-justify" scope="col">Massa Atômica</td>
+                                        <td id="Nadt" class="col-8" colspan="1">1</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MD-f" class="modal-footer rounded-0 bg-alpha border-ATd">
+                    <button id="MD-b" type="button" class="btn btn-beta2 btn-block shadow-none"
+                        data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Fim -->
+    <!--Conteúdo Começo-->
+    <br><br>
+    <div class="container-fluid">
+        <div class="accordion" id="Ativades">
+            <div id="Cad1" class="border-ATd">
+                <!--Atividade 1-->
+                <div id="He1" class="card-header bg-alpha border-ATd rounded-0" id="AT1">
+                <h2 class="mb-0">
+                    <center>
+                        <button id="HB1" class="btn btn-link shadow-none text-decoration-none T-aRobM" type="button" data-toggle="collapse" data-target="#At-Tabela" aria-expanded="true" aria-controls="At-Tabela">
+                            Ativiade HTML 1 - Tabela 1
+                        </button>
+                    </center>
+                </h2>
+                </div>
+                <div id="At-Tabela" class="collapse show" aria-labelledby="AT1" data-parent="#Ativades">
+                <div id="HeB1" class="card-body bg-beta">
+                    <table id="Tb-AT1" class="table table-striped T-rob text-black">
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="align-middle">Produto</th>
+                                <th class="align-middle">Preço Unit.</th>
+                                <th style="padding-left: 100px" colspan="0">Quantidade</th>
+                                <th class="align-middle">Preço Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="align-middle" scope="row">Perfume A</th>
+                                <td class="align-middle">R$100,00</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Ca(i=0);"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="C1" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Ca(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                    <td id="R1">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th class="align-middle" scope="row">Perfume B</th>
+                                  <td class="align-middle">R$200,00</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cb(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="C2" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cb(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                  <td id="R2">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th class="align-middle" scope="row">Shampoo</th>
+                                  <td class="align-middle">R$50,00</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cc(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="C3" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cc(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                  <td id="R3">R$0,00</td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle" scope="row">Creme</th>
+                                    <td class="align-middle">R$60,00</td>
+                                    <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cd(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="C4" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cd(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                    <td id="R4">R$0,00</td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle">Totais</th>
+                                    <td class="align-middle">
+                                        <justify>
+                                            <button id="TbB-AT1" class="btn btn-link T-aRobM shadow-none text-decoration-none" onclick="vrau()">Check do Total</button>
+                                        </justify>
+                                    </td>
+                                    <td  style="padding-left: 140px" id="C5">0</td>
+                                    <td id="R5">R$0,00</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="Cad2" class="card border-ATd  rounded-0">
+                <!--Atividade 2-->
+                <div id="He2" class="card-header bg-alpha border-ATd" id="AT2">
+                    <h2 class="mb-0">
+                        <center>
+                            <button id="HB2" class="btn btn-link shadow-none text-decoration-none collapsed T-aRobM" type="button" data-toggle="collapse" data-target="#ATV2" aria-expanded="false" aria-controls="ATV2">
+                                Ativiade HTML 2 - Tabela 2
+                            </button>
+                    </center>
+                </h2>
+            </div>
+            <div id="ATV2" class="collapse" aria-labelledby="AT2" data-parent="#Ativades">
+                <div id="HeB2" class="card-body bg-beta">
+                    <table id="Tb-AT2" class="table text-center table-striped T-rob text-black text-nowrap align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th class="align-middle">#</th>
+                                <th class="align-middle">Produto</th>
+                                <th class="align-middle">Descrição</th>
+                                <th class="align-middle">Preço Unit.</th>
+                                <th style="padding-left: 8%;" class="text-left align-middle">Quantidade</th>
+                                <th class="align-middle">Preço Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="align-middle" scope="row">1</th>
+                                <td class="w-25">
+                                    <img class="imgtab" src="img/Cadeira.png"> 
+                                </td>
+                                <td class="align-middle">Cadeira Gamer</td>
+                                <td class="align-middle">R$1.139,00</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Ca2(i=0);"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="Cz1" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Ca2(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                    <td id="Rr1" class="align-middle">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th class="align-middle" scope="row">2</th>
+                                  <td class="w-25">
+                                      <img class="imgtab" src="img/Gabinete.png"> 
+                                  </td>
+                                  <td class="align-middle">Gabinete Gamer</td>
+                                  <td class="align-middle">R$225,33</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cb2(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="Cz2" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cb2(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                  <td id="Rr2" class="align-middle">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th class="align-middle" scope="row">3</th>
+                                  <td class="w-25">
+                                      <img class="imgtab" src="img/Gtx1660.png"> 
+                                  </td>
+                                  <td class="align-middle">GTX 1660</td>
+                                  <td class="align-middle">R$1.434,63</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cc2(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="Cz3" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cc2(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                  <td id="Rr3" class="align-middle">R$0,00</td>
+                                </tr>
+                                <tr>
+                                  <th class="align-middle" scope="row">4</th>
+                                  <td class="w-25">
+                                      <img class="imgtab" src="img/monitor.png"> 
+                                  </td>
+                                  <td class="align-middle">Monitor Gamer</td>
+                                  <td class="align-middle">R$422,51</td>
+                                  <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Cd2(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="Cz4" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Cd2(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                  <td id="Rr4" class="align-middle">R$0,00</td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle" scope="row">5</th>
+                                    <td class="w-25">
+                                        <img class="imgtab" src="img/ssd.png"> 
+                                    </td>
+                                    <td class="align-middle">SSD Sandisk</td>
+                                    <td class="align-middle">R$175,50</td>
+                                    <td class="" colspan="0">
+                                      <div class="input-group flex-nowrap input-group-spinner">
+                                          <div class="input-group-prepend">
+                                              <button style="min-width: 2.5em" class="btn btn-decrement btn-outline-secondary shadow-none" type="button" onclick="Ce2(i=0)"><i class="fa fa-minus-circle"></i>
+                                              </button>
+                                        </div>
+                                        <input id="Cz5" style="text-align: center" class="input">
+                                        <div class="input-group-append">
+                                            <button style="min-width: 2.5em" class="btn btn-increment btn-outline-secondary shadow-none" type="button" onclick="Ce2(i=1);">
+                                                    <i class="fa fa-plus-circle"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <input type="number" value="500" min="0" max="1000" step="10" style="display: none;">
+                                    </td>
+                                    <td id="Rr5" class="align-middle">R$0,00</td>
+                                </tr>
+                                <tr>
+                                    <th class="align-middle">Totais</th>
+                                    <td class="align-middle"></td>
+                                    <td class="align-middle">
+                                        <justify>
+                                            <button id="TbB1-AT2" class="btn btn-link T-aRobM shadow-none text-decoration-none" onclick="pei()">Check do Total</button>
+                                        </justify>
+                                    </td>
+                                    <td class="align-middle">
+                                        <justify>
+                                            <button id="TbB2-AT2" class="btn btn-link T-aRobM shadow-none text-decoration-none" data-toggle="modal" data-target="#AT2M">Ir para o Caixa</button>
+                                        </justify>
+                                    </td>
+                                    <td style="padding-left: 11%" id="Cz6" class="text-left align-middle">0</td>
+                                    <td id="Rr6" class="align-middle">R$0,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </table>
+                </div>
+            </div>
+            </div>
+            <div id="Cad3" class="card border-ATd  rounded-0">
+                <div id="He3" class="card-header card-header bg-alpha rounded-0" id="AT3">
+                    <h2 class="mb-0">
+                        <center>
+                            <button id="HB3" class="btn btn-link shadow-none text-decoration-none collapsed T-aRobM" type="button" data-toggle="collapse" data-target="#ATV3" aria-expanded="false" aria-controls="ATV3">Atividade HTML 3</button>
+                        </center>
+                    </h2>
+                </div>
+                <div id="ATV3" class="collapse" aria-labelledby="AT3" data-parent="#Ativades">
+                    <div id="HeB3" class="card-body bg-beta">
+                        Conteudo
+                    </div>
+                </div>
+            </div>
+            <div id="Cad4" class="card border-ATd  rounded-0">
+                <div id="He4" class="card-header card-header bg-alpha rounded-0" id="AT4">
+                    <h2 class="mb-0">
+                        <center>
+                            <button id="HB4" class="btn btn-link shadow-none text-decoration-none collapsed T-aRobM" type="button" data-toggle="collapse" data-target="#ATV4" aria-expanded="false" aria-controls="ATV4">Atividade HTML 4</button>
+                        </center>
+                    </h2>
+                </div>
+                <div id="ATV4" class="collapse" aria-labelledby="AT4" data-parent="#Ativades">
+                    <div id="HeB4" class="card-body bg-beta">
+                        Conteudo
+                    </div>
+                </div>
+            </div>
+            <div id="Cad5" class="card border-ATd  rounded-0">
+                <!--Trabalho 1-->
+                <div id="He5" class="card-header bg-alpha rounded-0" id="Trab1">
+                    <h2 class="mb-0">
+                        <center>
+                            <button id="HB5" class="btn btn-link shadow-none text-decoration-none collapsed T-aRobM" type="button" data-toggle="collapse" data-target="#AT-T" aria-expanded="false" aria-controls="AT-T">
+                                Trabalho HTML 1 - Tabela Periódica
+                            </button>
+                        </center>
+                    </h2>
+                </div>
+                <div id="AT-T" class="collapse" aria-labelledby="Trab1" data-parent="#Ativades">
+                    <div id="HeB5" class="card-body bg-beta">
+                        <br><br>
+                            <table class="tab text-center center" style="width: 100%;height: auto;">
+                                <tr class=""></tr>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=1,y=1)" class="tabPC Nm"><sup>1<br></sup><b>H</b></td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=2,y=6)" class="tabPC Gn"><sup>2<br></sup><b>He</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=3,y=2)" class="tabPC MA"><sup>3<br></sup><b>Li</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=4,y=7)" class="tabPC Ma-t"><sup>4<br></sup><b>Be</b></td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=5,y=3)" class="tabPC SM"><sup>5<br></sup><b>B</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=6,y=1)" class="tabPC Nm"><sup>6<br></sup><b>C</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=7,y=1)" class="tabPC Nm"><sup>7<br></sup><b>N</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=8,y=1)" class="tabPC Nm"><sup>8<br></sup><b>O</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=9,y=8)" class="tabPC Hl"><sup>9<br></sup><b>F</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=10,y=6)" class="tabPC Gn"><sup>10<br></sup><b>Ne</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=11,y=2)" class="tabPC MA"><sup>11<br></sup><b>Na</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=12,y=7)" class="tabPC Ma-t"><sup>12<br></sup><b>Mg</b></td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td class="">⠀⠀</td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=13,y=4)" class="tabPC Om"><sup>13<br></sup><b>Al</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=14,y=3)" class="tabPC SM"><sup>14<br></sup><b>Si</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=15,y=1)" class="tabPC Nm"><sup>15<br></sup><b>P</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=16,y=1)" class="tabPC Nm"><sup>16<br></sup><b>S</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=17,y=8)" class="tabPC Hl"><sup>17<br></sup><b>Cl</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=18,y=6)" class="tabPC Gn"><sup>18<br></sup><b>Ar</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=19,y=2)" class="tabPC MA"><sup>19<br></sup><b>K</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=20,y=7)" class="tabPC Ma-t"><sup>20<br></sup><b>Ca</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=21,y=9)" class="tabPC Mdt"><sup>21<br></sup><b>Sc</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=22,y=9)" class="tabPC Mdt"><sup>22<br></sup><b>Ti</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=23,y=9)" class="tabPC Mdt"><sup>23<br></sup><b>V</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=24,y=9)" class="tabPC Mdt"><sup>24<br></sup><b>Cr</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=25,y=9)" class="tabPC Mdt"><sup>25<br></sup><b>Mn</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=26,y=9)" class="tabPC Mdt"><sup>26<br></sup><b>Fe</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=27,y=9)" class="tabPC Mdt"><sup>27<br></sup><b>Co</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=28,y=9)" class="tabPC Mdt"><sup>28<br></sup><b>Ni</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=29,y=9)" class="tabPC Mdt"><sup>29<br></sup><b>Cu</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=30,y=9)" class="tabPC Mdt"><sup>30<br></sup><b>Zn</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=31,y=4)" class="tabPC Om"><sup>31<br></sup><b>Ga</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=32,y=3)" class="tabPC SM"><sup>32<br></sup><b>Ge</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=33,y=3)" class="tabPC SM"><sup>33<br></sup><b>As</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=34,y=1)" class="tabPC Nm"><sup>34<br></sup><b>Se</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=35,y=8)" class="tabPC Hl"><sup>35<br></sup><b>Br</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=36,y=6)" class="tabPC Gn"><sup>36<br></sup><b>Kr</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=37,y=2)" class="tabPC MA"><sup>37<br></sup><b>Rb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=38,y=7)" class="tabPC Ma-t"><sup>38<br></sup><b>Sr</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=39,y=9)" class="tabPC Mdt"><sup>39<br></sup><b>Y</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=40,y=9)" class="tabPC Mdt"><sup>40<br></sup><b>Zr</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=41,y=9)" class="tabPC Mdt"><sup>41<br></sup><b>Nb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=42,y=9)" class="tabPC Mdt"><sup>42<br></sup><b>Mo</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=43,y=9)" class="tabPC Mdt"><sup>43<br></sup><b>Tc</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=44,y=9)" class="tabPC Mdt"><sup>44<br></sup><b>Ru</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=45,y=9)" class="tabPC Mdt"><sup>45<br></sup><b>Rh</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=46,y=9)" class="tabPC Mdt"><sup>46<br></sup><b>Pd</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=47,y=9)" class="tabPC Mdt"><sup>47<br></sup><b>Ag</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=48,y=9)" class="tabPC Mdt"><sup>48<br></sup><b>Cd</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=49,y=4)" class="tabPC Om"><sup>49<br></sup><b>In</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=50,y=4)" class="tabPC Om"><sup>50<br></sup><b>Sn</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=51,y=3)" class="tabPC SM"><sup>51<br></sup><b>Sb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=52,y=3)" class="tabPC SM"><sup>52<br></sup><b>Te</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=53,y=8)" class="tabPC Hl"><sup>53<br></sup><b>I</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=54,y=6)" class="tabPC Gn"><sup>54<br></sup><b>Xe</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=55,y=2)" class="tabPC MA"><sup>55<br></sup><b>Cs</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=56,y=7)" class="tabPC Ma-t"><sup>56<br></sup><b>Ba</b></td>
+                                    <td class="tabPC Lt-M"><sup class="text-nowrap">57-71<br></sup><b>X</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=72,y=9)" class="tabPC Mdt"><sup>72<br></sup><b>Hf</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=73,y=9)" class="tabPC Mdt"><sup>73<br></sup><b>Ta</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=74,y=9)" class="tabPC Mdt"><sup>74<br></sup><b>W</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=75,y=9)" class="tabPC Mdt"><sup>75<br></sup><b>Re</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=76,y=9)" class="tabPC Mdt"><sup>76<br></sup><b>Os</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=77,y=9)" class="tabPC Mdt"><sup>77<br></sup><b>Ir</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=78,y=9)" class="tabPC Mdt"><sup>78<br></sup><b>Pt</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=79,y=9)" class="tabPC Mdt"><sup>79<br></sup><b>Au</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=80,y=9)" class="tabPC Mdt"><sup>80<br></sup><b>Hg</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=81,y=4)" class="tabPC Om"><sup>81<br></sup><b>Ti</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=82,y=4)" class="tabPC Om"><sup>82<br></sup><b>Pb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=83,y=4)" class="tabPC Om"><sup>83<br></sup><b>Bi</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=84,y=3)" class="tabPC SM"><sup>84<br></sup><b>Po</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=85,y=8)" class="tabPC Hl"><sup>85<br></sup><b>At</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=86,y=6)" class="tabPC Gn"><sup>86<br></sup><b>Rn</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=87,y=2)" class="tabPC MA"><sup>87<br></sup><b>Fr</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=88,y=7)" class="tabPC Ma-t"><sup>88<br></sup><b>Ra</b></td>
+                                    <td class="tabPC Act-M"><sup class="text-nowrap">89-103<br></sup><b>XX</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=104,y=9)" class="tabPC Mdt"><sup>104<br></sup><b>Rf</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=105,y=9)" class="tabPC Mdt"><sup>105<br></sup><b>Db</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=106,y=9)" class="tabPC Mdt"><sup>106<br></sup><b>Sg</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=107,y=9)" class="tabPC Mdt"><sup>107<br></sup><b>Bh</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=108,y=9)" class="tabPC Mdt"><sup>108<br></sup><b>Hs</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=109,y=9)" class="tabPC Mdt"><sup>109<br></sup><b>Mt</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=110,y=9)" class="tabPC Mdt"><sup>110<br></sup><b>Ds</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=111,y=9)" class="tabPC Mdt"><sup>111<br></sup><b>Rg</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=112,y=9)" class="tabPC Mdt"><sup>112<br></sup><b>Cn</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=113,y=4)" class="tabPC Om"><sup>113<br></sup><b>Nh</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=114,y=4)" class="tabPC Om"><sup>114<br></sup><b>Fl</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=115,y=4)" class="tabPC Om"><sup>115<br></sup><b>Mc</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=116,y=4)" class="tabPC Om"><sup>116<br></sup><b>Lv</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=117,y=8)" class="tabPC Hl"><sup>117<br></sup><b>Ts</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=118,y=6)" class="tabPC Gn"><sup>118<br></sup><b>Og</b></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <table class="tab text-center center" style="width: 100%;height: auto;">
+                                <tr class="">
+                                    <td style="padding: 37px;"></td>
+                                    <td style="padding: 37px;"></td>
+                                    <td style="padding: 37px;"></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=57,y=5)" class="tabPC Lt"><sup>57<br></sup><b>La</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=58,y=5)" class="tabPC Lt"><sup>58<br></sup><b>Ce</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=59,y=5)" class="tabPC Lt"><sup>59<br></sup><b>Pr</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=60,y=5)" class="tabPC Lt"><sup>60<br></sup><b>Nd</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=61,y=5)" class="tabPC Lt"><sup>61<br></sup><b>Pm</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=62,y=5)" class="tabPC Lt"><sup>62<br></sup><b>Sm</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=63,y=5)" class="tabPC Lt"><sup>63<br></sup><b>Eu</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=64,y=5)" class="tabPC Lt"><sup>64<br></sup><b>Gd</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=65,y=5)" class="tabPC Lt"><sup>65<br></sup><b>Tb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=66,y=5)" class="tabPC Lt"><sup>66<br></sup><b>Dy</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=67,y=5)" class="tabPC Lt"><sup>67<br></sup><b>Ho</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=68,y=5)" class="tabPC Lt"><sup>68<br></sup><b>Er</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=69,y=5)" class="tabPC Lt"><sup>69<br></sup><b>Tm</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=70,y=5)" class="tabPC Lt"><sup>70<br></sup><b>Yb</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=71,y=5)" class="tabPC Lt"><sup>71<br></sup><b>Lu</b></td>
+                                </tr>
+                                <tr class="">
+                                    <td style="padding: 37px;"></td>
+                                    <td style="padding: 37px;"></td>
+                                    <td style="padding: 37px;"></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=89,y=10)" class="tabPC Act"><sup>89<br></sup><b>Ac</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=90,y=10)" class="tabPC Act"><sup>90<br></sup><b>Th</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=91,y=10)" class="tabPC Act"><sup>91<br></sup><b>Pa</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=92,y=10)" class="tabPC Act"><sup>92<br></sup><b>U</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=93,y=10)" class="tabPC Act"><sup>93<br></sup><b>Np</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=94,y=10)" class="tabPC Act"><sup>94<br></sup><b>Pu</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=95,y=10)" class="tabPC Act"><sup>95<br></sup><b>Am</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=96,y=10)" class="tabPC Act"><sup>96<br></sup><b>Cm</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=97,y=10)" class="tabPC Act"><sup>97<br></sup><b>Bk</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=98,y=10)" class="tabPC Act"><sup>98<br></sup><b>Cf</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=99,y=10)" class="tabPC Act"><sup>99<br></sup><b>Es</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=100,y=10)" class="tabPC Act"><sup>100<br></sup><b>Fm</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=101,y=10)" class="tabPC Act"><sup>101<br></sup><b>Md</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=102,y=10)" class="tabPC Act"><sup>102<br></sup><b>No</b></td>
+                                    <td data-toggle="modal" data-target="#info" onclick="tp(x=103,y=10)" class="tabPC Act"><sup>103<br></sup><b>Lr</b></td>
+                                </tr>
+                            </table>
+                        <br><br>
+                        <a id="BtN3" class="btn btn-link T-aRobM btn-block shadow-none text-decoration-none" href="tabela.html">Tabela Livre</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Conteúdo Fim-->
+    <!--Rodapé Começo-->
+    <br><br>
+    <footer id="Rodapé" class="py-4 bg-alpha">
+        <div class="container">
+            <br>
+                <p id="rodP" class="m-0 text-center T-rob text-black">Copyright &copy; Weider - 2019</p>
+                <br>
+            </div>
+        </footer>
+        <!--Rodapé fim-->
+        <script>function Clock(){VI();}</script>
+    </body>
+</html>

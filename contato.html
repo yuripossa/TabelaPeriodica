@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang=pt-br>
+  <head>
+    <title>Contato</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta id="headC" name="theme-color" content="#000000"/>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/FVC.png">
+    <script src="js/config.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  </head>
+  <body id="bd" class="bg-beta">
+    <!--Topo Começo-->
+    <nav id="nv" class="navbar sticky-top navbar-expand-lg navbar-dark bg-alpha">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+            <img id="logo" class="logo logoD" alt="logo" src="img/Logo.png">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <div class="btn-group">
+                    <a id="btN1" class="btn btn-alpha t-rob shadow-none" href="index.html" target="_self">Home</a>
+                    <a id="btN2" class="btn btn-alpha t-rob shadow-none" href="contato.html" target="_self">Contato</a>
+                    <button id="click" type="button" class="btn btn-alpha t-rob shadow-none" onclick="Clock()">Modo Noturno</button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <!--Topo Fim-->
+    <!--Conteudo Começo-->
+    <br><br><br>
+    <div id="Cc" class="container bg-alpha text-black rounded">
+    <br>
+    <h1 class="mt-4 mb-3 ">Contato</h1>
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+            <iframe class="border-beta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.181055147351!2d-43.927724385086314!3d-19.874575286634784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a8b1ff70771%3A0x1677e11239672684!2sMinas%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1571145891542!5m2!1spt-BR!2sbr" width="100%" height="400" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-lg-4 mb-4 T-rob">
+            <div id="Ct" class="text-black">
+                <h3>Detalhes para contato</h3>
+                <!--Info-->
+                <p>Minas Shopping <br>  Belo Horizonte - MG</p>
+                <p>Telefone: +55 (31) 97114-1018</p>
+                <p>E-m@il: <a id="ETa" href="mailto:weidertehnorio@yahoo.com.br" class="text-decoration-none T-aRobM">weidertehnorio@yahoo.com.br</a></p>
+                <!--Fim Info-->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 mb-4">
+        <h3 class>Nós mande uma mensagem!</h3>
+        <form name="ContInfo">
+            <div class="control-group form-group">
+            <div class="controls">
+                <label id="lc1" class="T-rob text-black">Nome Completo:</label>
+                <input type="text" class="form-control" id="nomeCF" required data-validation-required-message="Favor, escrever o seu nome.">
+                <small class="ES passwordHelpInline" id="EN"><br></small>
+                <p class="help-block"></p>
+            </div>
+            </div>
+            <div class="control-group form-group">
+            <div class="controls">
+                <label id="lc2" class="T-rob text-black">Telefone:</label>
+                <input type="tel" class="form-control" id="telefoneCF" required data-validation-required-message="Favor, escrever seu número de telefone.">
+                <small class="ES passwordHelpInline" id="ET"><br></small>
+            </div>
+            </div>
+            <div class="control-group form-group">
+            <div class="controls">
+                <label id="lc3" class="T-rob text-black">Email:</label>
+                <input type="email" class="form-control" id="emailCF" required data-validation-required-message="Favor, escrever seu e-mail.">
+                <small class="ES passwordHelpInline" id="EE"><br></small>
+            </div>
+            </div>
+            <div class="control-group form-group">
+            <div class="controls">
+                <label id="lc4" class="T-rob text-black">Mensagem:</label>
+                <textarea rows="10" cols="100" class="form-control" id="mensagemCF" required data-validation-required-message="Favor, escrever sua mensagem." maxlength="999" style="resize:none"></textarea>
+                <small class="ES passwordHelpInline" id="EM"><br></small>
+            </div>
+            </div>
+            <div id="success"></div>
+            <div class="btn-group">
+            <button id="Ent" type="button" class="btn btn-beta1 shadow-none" id="BtnCF" onclick="CTjs()">Enviar</button>
+            <button id="Res" type="reset" class="btn btn-beta2 shadow-none">Apagar</button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+    <br><br>
+    <!--Conteúdo Fim-->
+    <!--Rodapé Começo-->
+    <footer id="Rodapé" class="py-4 bg-alpha">
+            <div class="container align-content-center">
+                <br>
+                <p id="rodP" class="m-0 text-center T-rob">Catling&trade; Weider - 2019</p>
+                <br>
+            </div>
+    </footer>
+    <!--Rodapé fim-->
+    <script>function Clock(){VC();}</script> 
+</body>
+</html>

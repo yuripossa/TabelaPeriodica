@@ -1,0 +1,322 @@
+body
+{
+    background-color: #ffffff;
+}
+.center
+{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.banner
+{
+    width: 100%;
+    height: 10%;
+}
+.imgato
+{
+    width: auto;
+    height: 400px;
+}
+.imgtab
+{
+    width: 18%;
+    height: auto;
+    padding-left: -1500px;
+    padding-right: -1500px;
+}
+.logo
+{
+    width: 28%;
+    height: auto;
+    padding: 15px;
+}
+.logoD
+{
+    -webkit-filter: opacity(.8) drop-shadow(0 0 0 rgb(0, 0, 0));
+    filter: opacity(.8) drop-shadow(0 0 0 rgb(0, 0, 0));
+}
+.logoN
+{
+    -webkit-filter: opacity(.8) drop-shadow(0 0 0 rgb(255, 255, 255));
+    filter: opacity(.8) drop-shadow(0 0 0 rgb(255, 255, 255));
+}
+.T-rob
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff;
+}
+.text-white
+{
+    color: #ffffff !important;
+}
+.text-black
+{
+    color: #000000 !important;
+}
+.ES
+{
+    color: #ff0000 !important;
+}
+.T-aRob
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #ffffff; 
+}
+.T-aRob:hover
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #9c9c9c; 
+}
+.T-aRobM
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #030303; 
+}
+.T-aRobM:hover
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #3b3b3b; 
+}
+.bg-alpha
+{
+    background-color: #ebe8e8;
+}
+.bg-beta
+{
+    background-color: #ffffff;
+}
+.bg-charlie
+{
+    background-color: #2b2b2b;
+}
+.bg-delta
+{
+    background-color: #000000;
+}
+.bg-venus
+{
+    background-color: #131313;
+}
+.border-ATn
+{
+    border-color: #000000;
+}
+.border-ATd
+{
+    border-color: #ebe8e8;
+}
+.bold
+{
+    font-weight: bold;
+}
+.btn-alpha
+{
+    background-color: #acacac;
+    color: #000000;
+}
+.btn-alpha:hover
+{
+    background-color: #837f7f;
+    color: #2b2b2b;
+}
+.btn-alpha:active
+{
+    background-color: #333232;
+    color: #747474;
+}
+.btn-beta1
+{
+    background-color: #acacac;
+    color: #0275d8;
+}
+.btn-beta1:hover
+{
+    background-color: #837f7f;
+    color: #0275d8;
+}
+.btn-beta1:active
+{
+    background-color: #837f7f;
+    color: #034c8b;
+}
+.btn-beta2
+{
+    background-color: #acacac;
+    color: #ff0000;
+}
+.btn-beta2:hover
+{
+    background-color: #837f7f;
+    color: #ff0000;
+}
+.btn-beta2:active
+{
+    background-color: #837f7f;
+    color: #a70404;
+}
+.btn-charlie
+{
+    background-color: #ebe8e8;
+    color: #000000;
+}
+.btn-charlie:hover
+{
+    background-color: #999999;
+    color: #333333;
+}
+.btn-charlie:active
+{
+    background-color: #4d4b4b;
+    color: #3b3b3b;
+}
+.btn-delta1
+{
+    border-color: #0275d8;
+    color: #0275d8;
+}
+.btn-delta1:hover
+{
+    background-color: #0275d8;
+    color: #000000;
+}
+.btn-delta1:active
+{
+    background-color: #034c8b;
+    color: #000000;
+}
+.btn-delta2
+{
+    border-color: #ff0000;
+    color: #ff0000;
+}
+.btn-delta2:hover
+{
+    background-color: #ff0000;
+    color: #000000;
+}
+.btn-delta2:active
+{
+    background-color: #a70404;
+    color: #000000;
+}
+input[type='number'] {
+    width: 50px;
+}
+h2 { font-size: 14px; margin: 20px auto; }
+.tabP
+{
+  border: 0.5px solid black;
+  border-collapse: collapse;
+}
+.tabPC
+{
+    padding: 23px;
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}
+.PdT-ET
+{
+    padding-top: 43.467px;
+    padding-bottom: 43.467px;
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    text-align: center,justify;
+}
+.Nm:hover,.Ma-t:hover,.Om:hover,.Act:hover,.Gn:hover,.SM:hover,.Mdt:hover,.MA:hover,.Hl:hover,.Lt:hover
+{
+    filter: blur(1.4px);
+    -webkit-filter: blur(1.4px);
+    cursor: pointer;
+}
+.Nm:active,.Ma-t:active,.Om:active,.Act:active,.Gn:active,.SM:active,.Mdt:active,.MA:active,.Hl:active,.Lt:active
+{
+    -webkit-filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+    filter: opacity(.4) drop-shadow(0 0 0 rgb(0, 0, 0));
+    cursor: progress;
+}
+.Nm
+{
+    background-color: #b6d766;
+}
+.Ma-t
+{
+    background-color: #f0e45c;
+}
+.Om
+{
+    background-color: #a0c6d1;
+}
+.Act
+{
+    background-color: #dcbed8;
+}
+.Gn
+{
+    background-color: #69b2df;
+}
+.SM
+{
+    background-color: #6fc5bc;
+}
+.Mdt
+{
+    background-color: #f2b1af;
+}
+.MA
+{
+    background-color: #f4c961;
+}
+.Hl
+{
+    background-color: #afdcf1;
+}
+.Lt
+{
+    background-color: #97d7e4;
+}
+.Nm-M
+{
+    background-color: #b6d766;
+}
+.Ma-t-M
+{
+    background-color: #f0e45c;
+}
+.Om-M
+{
+    background-color: #a0c6d1;
+}
+.Act-M
+{
+    background-color: #dcbed8;
+}
+.Gn-M
+{
+    background-color: #69b2df;
+}
+.SM-M
+{
+    background-color: #6fc5bc;
+}
+.Mdt-M
+{
+    background-color: #f2b1af;
+}
+.MA-M
+{
+    background-color: #f4c961;
+}
+.Hl-M
+{
+    background-color: #afdcf1;
+}
+.Lt-M
+{
+    background-color: #97d7e4;
+}
